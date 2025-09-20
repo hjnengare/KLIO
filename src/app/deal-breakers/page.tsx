@@ -192,7 +192,7 @@ export default function DealBreakersPage() {
             <button
               onClick={handleNext}
               disabled={!canContinue}
-              className={`group block w-full py-3 md:w-1/4 px-8 md:px-10 rounded-6 text-center font-urbanist text-6 md:text-5 font-600 transition-all duration-300 relative overflow-hidden
+              className={`group block w-full py-3 md:w-1/4 px-8 md:px-10 rounded text-center font-urbanist text-6 md:text-5 font-600 transition-all duration-300 relative overflow-hidden
                         ${canContinue
                   ? "bg-gradient-to-r from-sage to-sage/90 text-white hover:scale-105 shadow-lg  focus:outline-none focus:ring-4 focus:ring-sage/30 focus:ring-offset-2"
                   : "bg-light-gray/50 text-charcoal/40 cursor-not-allowed"}`}

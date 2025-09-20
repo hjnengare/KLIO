@@ -40,11 +40,11 @@ export default function Card({
 
   return (
     <article className={`
-      rounded-6 shadow-2 hover:shadow-1 transition-all duration-1 ease-cubic-out
+      rounded shadow-2 hover:shadow-1 transition-all duration-1 ease-cubic-out
       ${cardVariantClasses[variant]}
     `}>
       <Link href={href} className="block p-4">
-        <div className="relative w-full h-32 mb-3 rounded-6 overflow-hidden bg-cultured-1">
+        <div className="relative w-full h-32 mb-3 rounded overflow-hidden bg-cultured-1">
           {image && !imgError ? (
             <Image
               src={image}
@@ -60,7 +60,7 @@ export default function Card({
             </div>
           )}
           {rating && (
-            <div className="absolute top-2 right-2 bg-hoockers-green text-white px-2 py-1 rounded-6 flex items-center space-x-1">
+            <div className="absolute top-2 right-2 bg-hoockers-green text-white px-2 py-1 rounded flex items-center space-x-1">
               <ion-icon name="star" style={{ color: 'white' }} size="small"></ion-icon>
               <span className="font-urbanist text-8 font-500">{rating}</span>
             </div>

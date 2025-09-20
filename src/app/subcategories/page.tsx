@@ -471,7 +471,7 @@ function SubcategoriesContent() {
               <div className="pt-6">
                 <button
                   className={`
-                    group block w-full text-white font-urbanist text-sm md:text-base font-600 py-3.5 md:py-4 px-6 md:px-8 rounded-6 shadow-lg transition-all duration-300 relative text-center min-h-[52px]
+                    group block w-full text-white font-urbanist text-sm sm:text-base font-600 py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 rounded shadow-lg transition-all duration-300 relative text-center min-h-[44px] whitespace-nowrap
                     ${canProceed
                       ? "bg-gradient-to-r from-sage to-sage/90 hover:from-coral hover:to-coral/90 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-sage/30 focus:ring-offset-2 animate-pulse-soft"
                       : "bg-off-white/90 text-charcoal/40 cursor-not-allowed"
@@ -489,7 +489,7 @@ function SubcategoriesContent() {
                     <ion-icon name="arrow-forward" size="small" />
                   </span>
                   {canProceed && (
-                    <span className="pointer-events-none absolute inset-0 rounded-6 bg-gradient-to-r from-coral to-coral/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="pointer-events-none absolute inset-0 rounded bg-gradient-to-r from-coral to-coral/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   )}
                 </button>
               </div>

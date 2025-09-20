@@ -151,7 +151,7 @@ export default function BusinessProfilePage() {
         {/* Premium Business Header */}
         <FadeInUp delay={0.2}>
           <PremiumHover scale={1.02} shadowIntensity="light" duration={0.4}>
-            <div className="bg-off-white rounded-6 shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
+            <div className="bg-off-white rounded shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-sage/10 to-transparent rounded-full blur-2xl"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-coral/10 to-transparent rounded-full blur-2xl"></div>
@@ -167,7 +167,7 @@ export default function BusinessProfilePage() {
                   >
                     <div className="relative group">
                       {business.image ? (
-                        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-6 overflow-hidden ring-2 ring-sage/20 group-hover:ring-sage/40 transition-all duration-500">
+                        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded overflow-hidden ring-2 ring-sage/20 group-hover:ring-sage/40 transition-all duration-500">
                           <Image
                             src={business.image}
                             alt={`${business.name} photo`}
@@ -180,7 +180,7 @@ export default function BusinessProfilePage() {
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -skew-x-12 group-hover:translate-x-full"></div>
                         </div>
                       ) : (
-                        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-6 bg-gradient-to-br from-sage/20 to-coral/20 flex items-center justify-center ring-2 ring-sage/20 group-hover:ring-sage/40 transition-all duration-500">
+                        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded bg-gradient-to-br from-sage/20 to-coral/20 flex items-center justify-center ring-2 ring-sage/20 group-hover:ring-sage/40 transition-all duration-500">
                           <motion.div
                             whileHover={{ rotate: 10, scale: 1.1 }}
                             transition={{ duration: 0.3 }}
@@ -269,7 +269,7 @@ export default function BusinessProfilePage() {
         {/* Specials & Events */}
         <FadeInUp delay={0.4}>
           <PremiumHover scale={1.01} shadowIntensity="light" duration={0.3}>
-            <div className="bg-off-white rounded-6 shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
+            <div className="bg-off-white rounded shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-coral/10 to-transparent rounded-full blur-2xl"></div>
 
@@ -298,13 +298,13 @@ export default function BusinessProfilePage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.6 + (index * 0.1), duration: 0.5 }}
                       whileHover={{ scale: 1.03, y: -5 }}
-                      className="bg-off-white rounded-6 p-4 md:p-6 border border-sage/10 group hover:border-sage/30 transition-all duration-300"
+                      className="bg-off-white rounded p-4 md:p-6 border border-sage/10 group hover:border-sage/30 transition-all duration-300"
                     >
                       <div className="flex items-center space-x-4">
                         <motion.div
                           whileHover={{ rotate: [0, -10, 10, 0] }}
                           transition={{ duration: 0.6 }}
-                          className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-sage/20 to-sage/10 rounded-6 flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300"
+                          className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-sage/20 to-sage/10 rounded flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300"
                         >
                           <ion-icon
                             name={special.icon}
@@ -331,7 +331,7 @@ export default function BusinessProfilePage() {
         {/* Reviews */}
         <FadeInUp delay={0.6}>
           <PremiumHover scale={1.01} shadowIntensity="light" duration={0.3}>
-            <div className="bg-off-white rounded-6 shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
+            <div className="bg-off-white rounded shadow-sm border border-sage/10 p-4 md:p-6 mb-4 md:mb-6 relative overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-sage/10 to-transparent rounded-full blur-2xl"></div>
 
@@ -386,7 +386,7 @@ export default function BusinessProfilePage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.9 + (index * 0.1), duration: 0.5 }}
                       whileHover={{ scale: 1.01, x: 10 }}
-                      className="bg-off-white rounded-6 p-4 md:p-6 border border-sage/10 hover:border-sage/30 transition-all duration-300 group"
+                      className="bg-off-white rounded p-4 md:p-6 border border-sage/10 hover:border-sage/30 transition-all duration-300 group"
                     >
                       <div className="flex items-start space-x-4">
                         {/* Avatar */}

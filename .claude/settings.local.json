@@ -24,7 +24,11 @@
       "Bash(curl:*)",
       "Bash(git reset:*)",
       "Bash(start http://localhost:3002/register)",
-      "Bash(start \"http://localhost:3002/subcategories?interests=food-drink,arts-culture\")"
+      "Bash(start \"http://localhost:3002/subcategories?interests=food-drink,arts-culture\")",
+      "Bash(start http://localhost:3004/deal-breakers)",
+      "Bash(start http://localhost:3000/register)",
+      "Bash(start http://localhost:3005/deal-breakers)",
+      "Bash(start \"http://localhost:3004/home\")"
     ],
     "deny": [],
     "ask": []

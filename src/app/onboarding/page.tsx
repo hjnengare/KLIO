@@ -20,6 +20,7 @@ const styles = `
   .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
   .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
   .animate-line { animation: slideInLine 1.2s ease-out 1.1s forwards; }
+  .animate-fade-in-up-bg { animation: fadeInUp 0.8s ease-out forwards; }
   .delay-200 { animation-delay: 0.2s; }
   .delay-400 { animation-delay: 0.4s; }
   .delay-600 { animation-delay: 0.6s; }
@@ -28,6 +29,14 @@ const styles = `
   .delay-1200 { animation-delay: 1.2s; }
   .delay-1400 { animation-delay: 1.4s; }
   .delay-1600 { animation-delay: 1.6s; }
+
+  /* Disable background glow animations on mobile */
+  @media (max-width: 768px) {
+    .animate-fade-in-up-bg {
+      animation: none;
+      opacity: 0.3;
+    }
+  }
 `;
 
 export default function OnboardingPage() {
@@ -36,13 +45,13 @@ export default function OnboardingPage() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: styles }} />
-      <div className="min-h-dvh bg-gradient-to-br from-off-white via-off-white/98 to-off-white/95 flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden">
+      <div className="min-h-dvh bg-gradient-to-br from-off-white via-off-white/98 to-off-white/95 flex flex-col items-center justify-center px-4 py-4 md:py-8 relative overflow-hidden">
 
         {/* Lightweight decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-sage/30 to-sage/80 rounded-full blur-3xl opacity-0 animate-fade-in-up delay-200" />
-          <div className="absolute bottom-32 right-16 w-56 h-56 bg-gradient-to-br from-coral/25 to-coral/80 rounded-full blur-3xl opacity-0 animate-fade-in-up delay-400" />
-          <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-gradient-to-br from-charcoal/20 to-charcoal/20 rounded-full blur-2xl opacity-0 animate-fade-in-up delay-600" />
+          <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-sage/30 to-sage/80 rounded-full blur-3xl opacity-0 animate-fade-in-up-bg delay-200" />
+          <div className="absolute bottom-32 right-16 w-56 h-56 bg-gradient-to-br from-coral/25 to-coral/80 rounded-full blur-3xl opacity-0 animate-fade-in-up-bg delay-400" />
+          <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-gradient-to-br from-charcoal/20 to-charcoal/20 rounded-full blur-2xl opacity-0 animate-fade-in-up-bg delay-600" />
         </div>
 
         <div className="w-full max-w-full px-6 md:max-w-4xl md:px-4 mx-auto relative z-10">
@@ -74,7 +83,7 @@ export default function OnboardingPage() {
               <div className="opacity-0 animate-fade-in-up delay-1000">
                 <Link
                   href="/register"
-                  className="group block w-full bg-gradient-to-r from-sage to-sage/90 hover:from-coral hover:to-coral/90 text-white font-urbanist text-sm md:text-base font-600 py-3.5 md:py-4 px-6 md:px-8 rounded-6 shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-sage/20 hover:focus:ring-coral/20 focus:ring-offset-1 relative overflow-hidden text-center hover:scale-[1.02]"
+                  className="group block w-full bg-gradient-to-r from-sage to-sage/90 hover:from-coral hover:to-coral/90 text-white font-urbanist text-sm sm:text-base font-600 py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 rounded shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-sage/20 hover:focus:ring-coral/20 focus:ring-offset-1 relative overflow-hidden text-center hover:scale-[1.02] min-h-[44px]"
                 >
                   <span className="relative z-10">Get Started</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-coral to-coral/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -84,7 +93,7 @@ export default function OnboardingPage() {
               <div className="opacity-0 animate-fade-in-up delay-1200">
                 <Link
                   href="/login"
-                  className="group block w-full text-coral hover:text-coral/80 font-urbanist text-sm md:text-base font-600 py-3.5 md:py-4 px-6 md:px-8 transition-all duration-300 focus:outline-none relative text-center hover:scale-[1.01]"
+                  className="group block w-full text-coral hover:text-coral/80 font-urbanist text-sm sm:text-base font-600 py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 rounded transition-all duration-300 focus:outline-none relative text-center hover:scale-[1.01] min-h-[44px]"
                 >
                   <span className="relative z-10">Log in</span>
                 </Link>

@@ -137,7 +137,7 @@ function BusinessCard({ business }: { business: Business }) {
             )}
 
             {/* rating badge */}
-            <span className="absolute right-2 top-2 z-20 inline-flex items-center gap-1 rounded-6 bg-white/50 backdrop-blur-sm px-2 py-1 text-charcoal shadow-lg">
+            <span className="absolute right-2 top-2 z-20 inline-flex items-center gap-1 rounded bg-white/50 backdrop-blur-sm px-2 py-1 text-charcoal shadow-lg">
               <ion-icon name="star" class="text-coral text-sm drop-shadow-sm" />
               <span className="font-urbanist text-sm font-700">
                 {business.totalRating.toFixed(1)}

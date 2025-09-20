@@ -274,7 +274,7 @@ function ProfileContent() {
     return (
       <div className="min-h-dvh bg-gradient-to-br from-off-white via-off-white/98 to-off-white relative">
         <Header />
-        <div className="pt-[124px] md:pt-[144px] pb-32 sm:pb-28 md:pb-6 relative z-10">
+        <div className="pt-4 pb-32 sm:pb-28 md:pb-6 relative z-10">
           <div className="px-4 sm:px-6 md:px-8">
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="bg-off-white/90 backdrop-blur-sm p-6 border border-sage/10 shadow-sm">
@@ -309,7 +309,7 @@ function ProfileContent() {
     return (
       <div className="min-h-dvh bg-gradient-to-br from-off-white via-off-white/98 to-off-white relative">
         <Header />
-        <div className="pt-[124px] md:pt-[144px] pb-32 sm:pb-28 md:pb-6 relative z-10">
+        <div className="pt-4 pb-32 sm:pb-28 md:pb-6 relative z-10">
           <div className="px-4 sm:px-6 md:px-8">
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="bg-off-white/90 backdrop-blur-sm p-6 border border-red-200 shadow-sm text-center">
@@ -322,7 +322,7 @@ function ProfileContent() {
                 </p>
                 <Link
                   href="/home"
-                  className="inline-flex items-center space-x-2 bg-sage text-white px-6 py-3 rounded-6 font-urbanist font-600 hover:bg-sage/90 transition-colors"
+                  className="inline-flex items-center space-x-2 bg-sage text-white px-6 py-3 rounded font-urbanist font-600 hover:bg-sage/90 transition-colors"
                 >
                   <Ion name="chevron-back" className="text-[16px]" />
                   <span>Back to Home</span>
@@ -348,7 +348,7 @@ function ProfileContent() {
       <Header />
 
       {/* Main content */}
-      <div className="pt-[124px] md:pt-[144px] pb-32 sm:pb-28 md:pb-6 relative z-10">
+      <div className="pt-4 pb-32 sm:pb-28 md:pb-6 relative z-10">
         <div className="px-4 sm:px-6 md:px-8">
           <div className="max-w-4xl mx-auto space-y-6">
 

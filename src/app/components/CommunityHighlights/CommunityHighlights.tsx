@@ -17,7 +17,7 @@ interface CommunityHighlightsProps {
 }
 
 export default function CommunityHighlights({
-  title = "Community Highlights", 
+  title = "Community Highlights",
   reviews,
   topReviewers,
   businessesOfTheMonth,
@@ -31,17 +31,17 @@ export default function CommunityHighlights({
     router.push(href);
   };
 
-  const displayData = variant === "reviewers" 
+  const displayData = variant === "reviewers"
     ? topReviewers.map(reviewer => ({
-        id: reviewer.id,
-        reviewer,
-        businessName: "",
-        businessType: "",
-        rating: reviewer.rating,
-        reviewText: "",
-        date: "",
-        likes: 0
-      }))
+      id: reviewer.id,
+      reviewer,
+      businessName: "",
+      businessType: "",
+      rating: reviewer.rating,
+      reviewText: "",
+      date: "",
+      likes: 0
+    }))
     : reviews;
 
   return (
@@ -51,9 +51,9 @@ export default function CommunityHighlights({
         <div className="absolute top-10 right-20 w-32 h-32 bg-gradient-to-br from-sage/8 to-transparent rounded-full blur-2xl" />
         <div className="absolute bottom-20 left-10 w-24 h-24 bg-gradient-to-br from-coral/10 to-transparent rounded-full blur-xl" />
       </div>
-      
-      <div className="container mx-auto max-w-[1300px] px-4 sm:px-6 md:px-8 relative z-10 pt-4 sm:pt-6 pb-8 sm:pb-16">
-        <div className="mb-6 sm:mb-12 flex flex-wrap items-center justify-between gap-[18px]">
+
+      <div className="container mx-auto max-w-[1300px] px-4 sm:px-6 md:px-8 relative z-10 pt-2 sm:pt-6 pb-2">
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-[18px]">
           <h2 className="font-urbanist text-xl font-800 text-charcoal relative">
             {title}
             <div className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-sage to-coral rounded-full" />
@@ -69,13 +69,12 @@ export default function CommunityHighlights({
         </div>
 
         {/* Top Reviewers Subsection */}
-        <div className="mt-8 sm:mt-14 md:mt-16">
+        <div>
           <div className="mb-4 sm:mb-8 flex flex-wrap items-center justify-between gap-[18px]">
             <h3 className="font-urbanist text-base font-700 text-charcoal relative">
               Top Reviewers This Month In Claremont
             </h3>
           </div>
-
           <ScrollableSection>
             <ul className="flex snap-x gap-4 sm:gap-5 md:gap-6">
               {topReviewers.map((reviewer) => (

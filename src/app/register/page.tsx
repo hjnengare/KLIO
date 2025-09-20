@@ -466,7 +466,7 @@ export default function RegisterPage() {
                   <motion.button
                     type="submit"
                     disabled={submitting || isLoading || !consent || passwordStrength.score < 3 || !email || !password || !validateEmail(email)}
-                    className={`group block w-full font-urbanist text-sm sm:text-base font-600 py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 rounded-6 shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-offset-1 relative overflow-hidden text-center min-h-[44px] whitespace-nowrap ${
+                    className={`group block w-full font-urbanist text-sm sm:text-base font-600 py-3 sm:py-3.5 md:py-4 px-4 sm:px-6 md:px-8 rounded shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-offset-1 relative overflow-hidden text-center min-h-[44px] whitespace-nowrap ${
                       submitting || isLoading || !consent || passwordStrength.score < 3 || !email || !password || !validateEmail(email)
                         ? 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-50'
                         : 'bg-gradient-to-r from-sage to-sage/90 hover:from-coral hover:to-coral/90 text-white focus:ring-sage/20 hover:focus:ring-coral/20 hover:scale-[1.02]'
